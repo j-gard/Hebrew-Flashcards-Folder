@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Memory Game!</title>
+    <link rel="stylesheet" type="text/css" href="memorygame.css"/>
+  </head>
+  
+  <body class="body">
+    <section class="boxHeader">
+      <div id="boxBigWords">
+        <p id="bigWords">Memory Game</p>
+      </div>
+    </section>
+
+    <section id="tallyUp">
+      <p class="resultTab">Correct: <span id="numberCorrect"></span></p>
+      <div id="theDeck"></div>
+    </section>
+
+    <section id="showCard">
+      <p class="visibleCard">VOCAB</p>
+      <div class = "visibleCard" id="activeCard"></div>
+      <div class = "visibleCard"><span id="possibleAnswers"></span></div>
+      <div class = "visibleCard" id="answerReturn"><span id="assessedAnswer"></span></div>
+    </section>
+    <grid class = "buttonGrid">
+      <button class = "buttonStyle" id="buttonOne" onclick="checkAnswer(possibleArray[0])">button</button>
+      <button class = "buttonStyle" id="buttonTwo" onclick="checkAnswer(possibleArray[1])">button</button>
+      <button class = "buttonStyle" id="buttonThree" onclick="checkAnswer(possibleArray[2])">button</button>
+      <button class = "buttonStyle" id="buttonFour" onclick="checkAnswer(possibleArray[3])">button</button>
+      <button class = "buttonStyle" id="buttonFive" onclick="checkAnswer(possibleArray[4])">button</button>
+    </grid>
+
+    <script src="memorygame.js"></script>
+  </body>
+</html>
