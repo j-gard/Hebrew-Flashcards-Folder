@@ -15,8 +15,9 @@
     </section>
 
     <section id="tallyUp">
-      <p class="resultTab">Correct: <span id="numberCorrect"></span></p>
-      <div id="theDeck"></div>
+      <p class="resultTab">Flashcard Deck Size =  <span id="sizeOfDeck"></span></p>
+      <p class="resultTab">Smartness Scale: <span id="smartAnswer"></span></p>
+      <p class="resultTab"># of Times You Should've Used Google: <span id="idiotAnswer"></span></p>
     </section>
 
     <section id="showCard">
@@ -26,11 +27,11 @@
       <div class = "visibleCard" id="answerReturn"><span id="assessedAnswer"></span></div>
     </section>
     <grid class = "buttonGrid">
-      <button class = "buttonStyle" id="buttonOne" onclick="checkAnswer(possibleArray[0])">button</button>
-      <button class = "buttonStyle" id="buttonTwo" onclick="checkAnswer(possibleArray[1])">button</button>
-      <button class = "buttonStyle" id="buttonThree" onclick="checkAnswer(possibleArray[2])">button</button>
-      <button class = "buttonStyle" id="buttonFour" onclick="checkAnswer(possibleArray[3])">button</button>
-      <button class = "buttonStyle" id="buttonFive" onclick="checkAnswer(possibleArray[4])">button</button>
+      <button class = "buttonStyle" id="buttonOne" onclick="checkUserAnswer(answerChoices[0])">button</button>
+      <button class = "buttonStyle" id="buttonTwo" onclick="checkUserAnswer(answerChoices[1])">button</button>
+      <button class = "buttonStyle" id="buttonThree" onclick="checkUserAnswer(answerChoices[2])">button</button>
+      <button class = "buttonStyle" id="buttonFour" onclick="checkUserAnswer(answerChoices[3])">button</button>
+      <button class = "buttonStyle" id="buttonFive" onclick="checkUserAnswer(answerChoices[4])">button</button>
     </grid>
 
     <script src="memorygame.js"></script>
