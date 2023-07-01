@@ -7,33 +7,36 @@
     <link rel="stylesheet" type="text/css" href="memorygame.css"/>
   </head>
   
-  <body class="body">
-    <section class="boxHeader">
-      <div id="boxBigWords">
-        <p id="bigWords">Memory Game</p>
-      </div>
+  <body class="body" id="mainBody">
+    <section id = "mainWindow">
+      <section class="boxHeader">
+        <div id="boxBigWords">
+          <p id="bigWords">Memory Game</p>
+        </div>
+      </section>
+  
+      <section id="tallyUp">
+        <p class="resultTab">Flashcard Deck Size =  <span id="sizeOfDeck"></span></p>
+        <p class="resultTab">Smartness Scale: <span id="smartAnswer"></span></p>
+        <p class="resultTab"># of Times You Should've Used Google: <span id="idiotAnswer"></span></p>
+      </section>
+  
+      <section id="showCard">
+        <p class="visibleCard" id="VOCAB">VOCAB WORD: </p>
+        <div class = "visibleCard" id="activeCard"></div>
+        <div class = "visibleCard"><span id="possibleAnswers"></span></div>
+        <div class = "visibleCard" id="answerReturn"><span id="assessedAnswer"></span></div>
+      </section>
+      <grid class = "buttonGrid">
+        <button class = "buttonStyle" id="buttonOne" onclick="checkUserAnswer(answerChoices[0])">button</button>
+        <button class = "buttonStyle" id="buttonTwo" onclick="checkUserAnswer(answerChoices[1])">button</button>
+        <button class = "buttonStyle" id="buttonThree" onclick="checkUserAnswer(answerChoices[2])">button</button>
+        <button class = "buttonStyle" id="buttonFour" onclick="checkUserAnswer(answerChoices[3])">button</button>
+        <button class = "buttonStyle" id="buttonFive" onclick="checkUserAnswer(answerChoices[4])">button</button>
+      </grid>
+  
+      <script src="memorygame.js"></script>
     </section>
 
-    <section id="tallyUp">
-      <p class="resultTab">Flashcard Deck Size =  <span id="sizeOfDeck"></span></p>
-      <p class="resultTab">Smartness Scale: <span id="smartAnswer"></span></p>
-      <p class="resultTab"># of Times You Should've Used Google: <span id="idiotAnswer"></span></p>
-    </section>
-
-    <section id="showCard">
-      <p class="visibleCard">VOCAB</p>
-      <div class = "visibleCard" id="activeCard"></div>
-      <div class = "visibleCard"><span id="possibleAnswers"></span></div>
-      <div class = "visibleCard" id="answerReturn"><span id="assessedAnswer"></span></div>
-    </section>
-    <grid class = "buttonGrid">
-      <button class = "buttonStyle" id="buttonOne" onclick="checkUserAnswer(answerChoices[0])">button</button>
-      <button class = "buttonStyle" id="buttonTwo" onclick="checkUserAnswer(answerChoices[1])">button</button>
-      <button class = "buttonStyle" id="buttonThree" onclick="checkUserAnswer(answerChoices[2])">button</button>
-      <button class = "buttonStyle" id="buttonFour" onclick="checkUserAnswer(answerChoices[3])">button</button>
-      <button class = "buttonStyle" id="buttonFive" onclick="checkUserAnswer(answerChoices[4])">button</button>
-    </grid>
-
-    <script src="memorygame.js"></script>
   </body>
 </html>
