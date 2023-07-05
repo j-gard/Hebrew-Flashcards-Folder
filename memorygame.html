@@ -11,14 +11,19 @@
     <section id = "mainWindow">
       <section class="boxHeader">
         <div id="boxBigWords">
-          <p id="bigWords">Memory Game</p>
+          <p id="bigWords">Hebrew Flash Cards</p>
         </div>
       </section>
   
       <section id="tallyUp">
         <p class="resultTab">Flashcard Deck Size =  <span id="sizeOfDeck"></span></p>
         <p class="resultTab">Smartness Scale: <span id="smartAnswer"></span></p>
-        <p class="resultTab"># of Times You Should've Used Google: <span id="idiotAnswer"></span></p>
+        <p class="resultTab">Lives: <span id="displayedLives"></span></p>
+        <img class="heartPhotos" id="heartOne" src="https://w7.pngwing.com/pngs/777/253/png-transparent-8-bit-color-heart-pixel-art-upscale-love-rectangle-video-game.png">
+        <img class="heartPhotos" id="heartTwo"src="https://w7.pngwing.com/pngs/777/253/png-transparent-8-bit-color-heart-pixel-art-upscale-love-rectangle-video-game.png">
+        <img class="heartPhotos" id="heartThree" src="https://w7.pngwing.com/pngs/777/253/png-transparent-8-bit-color-heart-pixel-art-upscale-love-rectangle-video-game.png">
+        <img class="heartPhotos" id="heartFour" src="https://w7.pngwing.com/pngs/777/253/png-transparent-8-bit-color-heart-pixel-art-upscale-love-rectangle-video-game.png">
+        <img class="heartPhotos" id="heartFive" src="https://w7.pngwing.com/pngs/777/253/png-transparent-8-bit-color-heart-pixel-art-upscale-love-rectangle-video-game.png">
       </section>
   
       <section id="showCard">
@@ -27,6 +32,9 @@
         <div class = "visibleCard"><span id="possibleAnswers"></span></div>
         <div class = "visibleCard" id="answerReturn"><span id="assessedAnswer"></span></div>
       </section>
+
+      
+
       <grid class = "buttonGrid">
         <button class = "buttonStyle" id="buttonOne" onclick="checkUserAnswer(answerChoices[0])">button</button>
         <button class = "buttonStyle" id="buttonTwo" onclick="checkUserAnswer(answerChoices[1])">button</button>
