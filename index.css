@@ -1,0 +1,210 @@
+
+#indexBody {
+  margin: 0%;
+  padding: 0%;
+}
+
+#indexTop {
+  display: flex;
+  background-image: url("https://i.redd.it/x219hh4w95881.png");
+  background-position: -20px 0% ;
+  background-size: 105%;
+  image-rendering: optimizeQuality;
+  background-repeat: no-repeat;
+  margin: 0vw 0vw 0vw 0vw;
+  padding: 0vw 0vw 40vw 0vw;
+}
+
+#floatingLogo {
+  display: block;
+  align-items: left;
+  justify-content: left;
+  padding: 8vw 0 0 8vw;
+  animation: animate 2s linear infinite alternate;
+}
+
+.logoWords {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Slackside One', cursive;
+  font-size: 2vw;
+  font-weight: 500;
+  color: black;
+  text-shadow: 1px 1px 2px rgb(255, 214, 214);
+}
+
+#logoTheLegend {
+  margin: 2px 0px -25px 150px;
+  padding: 2px 0 2px 0px;
+}
+
+#logoWebDev {
+  margin: -32px 0 2px 150px;
+  padding: 2px 0 2px 0;
+}
+
+#wordSplit {
+  display: grid;
+  grid-template-columns: 41% 1fr;
+}
+
+#logoJ {
+  display: inline-flex;
+  align-items: right;
+  justify-content: right;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 6vw;
+  font-weight: 700;
+  margin: 2px 0 2px 0;
+  padding: 2px 0 2px 0;
+  color: rgb(232, 37, 54);
+  text-shadow: 2px 2px rgba(122, 20, 29, 0.8);
+}
+
+#logoJesseGard {
+  display: inline-flex;
+  align-items: left;
+  justify-content: left;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3vw;
+  font-weight: 700;
+  margin: 2px 0 2px 0;
+  padding: 2px 0 2px 0;
+  color: rgb(232, 37, 54);
+  text-shadow: 2px 2px rgba(122, 20, 29, 0.8);
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(19px);
+  }
+}
+
+#inventory {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 0vw 0vw 0vw 0vw;
+  padding: 10vw 0vw 0vw 0vw;
+  height: 50vw;
+  width: auto;
+ /* background: linear-gradient(rgb(102, 54, 81),rgb(27,27,41));*/
+ background-color: rgb(27,27,41);
+}
+
+#dudeGrid {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  grid-template-rows: 450px;
+  gap: 20px;
+  border-color: rgb(37,37,51);
+  margin-top: -20px;
+}
+
+#spiderThing {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin: 50px 0 50px 0;
+  padding: 60px 0 0 0 ;
+}
+
+#spider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  width: 180px;
+  background-image: url("https://hatwizardgame.com/wp-content/uploads/2018/07/BossHeader-825x480.png");
+  background-position: 50%;
+}
+
+#textCircle {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  justify-self: end;
+  height: 200px;
+  width: 600px;
+  background: radial-gradient(circle at 900px 500px, rgb(76, 76, 87), rgb(57, 57, 72) 40%, rgb(27,27,41) 90%);
+  border-radius: 100px 100px 5px 100px;
+}
+
+#dudeComment {
+  color: rgb(211,120,131);
+  margin: 0 50px 0 0;
+  padding: 20px 0px 0px 80px;
+  font-family: 'Slackside One', cursive;
+  font-size: 30px
+}
+
+#languageLogos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  margin: -200px 0px 0px 130px;
+}
+
+#jsLogo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+#htmlLogo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  mix-blend-mode: lighten;
+  padding-left: 16px;
+}
+
+#cssLogo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 118px;
+  width: auto;
+  mix-blend-mode: lighten;
+  padding-bottom: 18px;
+}
+
+#nodeLogo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 86px;
+  width: auto;
+  mix-blend-mode: lighten;
+  padding-left: 12px;
+}
+
+#divider {
+  height: 6vw;
+  background: linear-gradient(rgb(37,37,51) 0%, rgb(185, 100, 110) 30%, rgb(211,120,131) 100%);
+}
+
+#projectSection {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 0vw 0vw 0vw 0vw;
+  padding: 10vw 0vw 0vw 0vw;
+  height: 50vw;
+  width: auto;
+  background-color: rgb(211,120,131);
+}
+
+
+/*https://cdna.artstation.com/p/marketplace/presentation_assets/002/452/666/large/file.jpg?1676558525
+/*https://rare-gallery.com/thumbs/982277-pixel-art-digital-art-pixelated-pixels-nature-landscape.png
+/*https://i.pinimg.com/originals/5b/44/f5/5b44f55853da08cf26e6459765eb8bc3.jpg
+/*https://imagedelivery.net/9sCnq8t6WEGNay0RAQNdvQ/UUID-cl9jg810v2127qloh981h5e4s/public
+https://i.pinimg.com/736x/c4/c9/09/c4c909057ca59d3cc4e8533a108d3e31.jpg

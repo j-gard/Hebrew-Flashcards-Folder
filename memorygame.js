@@ -110,6 +110,10 @@ let savedSmartScore = JSON.parse(localStorage.getItem("smartScore"));
 let storeIdiotScore = idiotAnswer;
 let savedIdiotScore = JSON.parse(localStorage.getItem("idiotScore"));
 
+/*let storeDifficulty = [fullDeck];
+let savedDifficulty = JSON.parse[localStorage.getItem("storedDifficulty")];
+*/
+
 let fifthHeart = document.getElementById("heartFive");
 let fourthHeart = document.getElementById("heartFour");
 let thirdHeart = document.getElementById("heartThree");
@@ -184,6 +188,11 @@ function displayIdiotScore() {
   }
 } 
 
+function difficultyChange() {
+  fullDeck[randomIndex].difficulty++;
+  console.log(fullDeck[randomIndex].difficulty);
+}
+
 function doNotDuplicateRandomIndex() {
   if (randomIndex < 4) createRandomIndex();
 }
@@ -240,6 +249,7 @@ function checkUserAnswer(buttonInput) {
   else {
     console.log("you're an idiot.");
     idiotAnswer++;
+    difficultyChange();
     saveScores();
   }
 }
@@ -252,6 +262,10 @@ function saveScores() {
   storeIdiotScore = JSON.stringify(idiotAnswer);
   localStorage.setItem("idiotScore", storeIdiotScore);
   savedIdiotScore = JSON.parse(localStorage.getItem("idiotScore"));
+
+  /*storeDifficulty = JSON.stringify(fullDeck[randomIndex]);
+  localStorage.setItem("storedDifficulty", storeIdiotScore);
+  savedDifficulty = JSON.parse(localStorage.getItem("idiotScore"));*/
 
   displayIdiotScore();
   displaySmartScore();
